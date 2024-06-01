@@ -1,0 +1,411 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #fffbca 0%, #DEFFF7 100%);
+}
+
+#calcu-title{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#ver{
+    font-size: 10px;
+    color: rgb(164, 2, 164);
+}
+
+#result{
+    width: 375px;
+    height: 100px;
+    color: black;
+    font-size: 20px;
+    border: 10px solid #36454F;
+    padding: 20px;
+    border-style: inset;
+    background-image:
+    linear-gradient(to right, rgb(255, 255, 255), transparent 1px),
+    linear-gradient(to bottom, rgb(255, 255, 255), transparent 1px);
+    background-size: 20px 20px;
+    background-color: rgb(237, 255, 211);
+    text-align: right;
+}
+
+/* First grid */
+.num-btn_grid1{
+    padding: 20px 40px;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+}
+.num-btn_grid1:hover{box-shadow:0 0 10px #ecdcfd;}
+.num-btn_grid1:active{transform: scale(0.9);}
+
+#clear{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 39.5px;
+}
+#clear:active{transform: scale(0.9);}
+#del{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 26.5px; 
+    margin-top: 10px;
+}
+#del:active{transform: scale(0.9);}
+#divide{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 43px;
+}
+#divide:active{transform: scale(0.9);}
+#times{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 40.5px;
+}
+#times:active{transform: scale(0.9);}
+
+/* Second grid */
+.num-btn_grid2{
+    padding: 20px 40.5px;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+.num-btn_grid2:hover{background-color:#232323;box-shadow:0 0 10px #ecdcfd;color: white;}
+.num-btn_grid2:active{transform: scale(0.9);}
+
+#minus{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 42px;
+}
+#minus:active{transform: scale(0.9);}
+
+/* Third grid  */
+.num-btn_grid3{
+    padding: 20px 40.5px;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+.num-btn_grid3:hover{background-color:#232323;box-shadow:0 0 10px #ecdcfd;color: white;}
+.num-btn_grid3:active{transform: scale(0.9);}
+
+#plus{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 20px 39px;
+}
+#plus:active{transform: scale(0.9);}
+
+/* Fourth grid  */
+.num-btn_grid4{
+    padding: 20px 40.5px;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+.num-btn_grid4:hover{background-color:#232323;box-shadow:0 0 10px #ecdcfd;color: white;}
+.num-btn_grid4:active{transform: scale(0.9);}
+
+#equals{
+    background-color: orange;
+    color: white;
+    transition: transform 0.1s ease-in-out;
+    padding: 59px 39px;
+}
+#equals:active{transform: scale(0.9);}
+
+/* Fifth grid  */
+.num-btn_grid5{
+    padding: 20px 40.5px;
+    background-color: azure;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.1s ease-in-out;
+}
+.num-btn_grid5:hover{background-color:#232323;box-shadow:0 0 10px #ecdcfd;color: white;}
+.num-btn_grid5:active{transform: scale(0.9);}
+
+#doublezero{
+    padding: 20px 35px;
+}
+#dot{
+    padding: 20px 43px;
+}
+
+.calcu-content{
+    background-color: black;
+    border-color: 20px solid black;
+    border-radius: 2%;
+    padding: 10px;
+    box-shadow: 0 0 55px rgba(0,0,0,100);
+    align-items: center;
+}
+/* Responsiveness-------------------------------------- */
+/* Large screen Dimension */
+@media screen and (min-width:2560px) {
+    #result{
+        width: 575px;
+        height: 155px;
+        font-size: 35px;
+        border: 20px solid #36454F;
+        padding: 40px;
+        border-style: inset;
+        background-image:
+        linear-gradient(to right, rgb(255, 255, 255), transparent 1px),
+        linear-gradient(to bottom, rgb(255, 255, 255), transparent 1px);
+        background-size: 40px 40px;
+        background-color: rgb(237, 255, 211);
+        text-align: right;
+    }
+
+    #calcu-title{
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    #ver{
+        font-size: 13px;
+    }
+
+    .num-btn_grid1, .num-btn_grid2, .num-btn_grid3, .num-btn_grid4, .num-btn_grid5{
+        padding: 42px 59px;
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    #clear{
+        padding: 42px 59px;
+    }
+    #del{
+        padding: 42px 43px;
+        margin-top: 6px;
+    }
+    #divide{
+        padding: 42px 62.5px;
+    }
+    #times{
+        padding: 42px 59px;
+    }
+
+    #minus{
+        padding: 42px 61px;
+    }
+
+    #plus{
+        padding: 42px 58px;
+    }
+
+    #equals{
+        padding: 108px 57px;
+    }
+
+    #doublezero{
+        padding: 42px 51px;
+    }
+    #dot{
+        padding: 42px 63px;
+    }
+    .calcu-content{
+        background-color: black;
+        border-color: 40px solid black;
+        border-radius: 2%;
+        padding: 20px;
+        box-shadow: 0 0 55px rgba(0,0,0,100);
+        align-items: center;
+    }
+}
+/* Large Mobile to Tablet Screen Dimension */
+@media screen and (max-width:426px) {
+    #result{
+        width: 245px;
+        height: 80px;
+        color: black;
+        font-size: 15px;
+        border: 10px solid #36454F;
+        padding: 20px;
+    }
+
+    #calcu-title{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #ver{
+        font-size: 8px;
+    }
+
+    .num-btn_grid1, .num-btn_grid2, .num-btn_grid3, .num-btn_grid4, .num-btn_grid5{
+        padding: 12px 20px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #clear{
+        padding: 12px 20.5px;
+    }
+    #del{
+        padding: 12px 14px;
+        margin-top: 6px;
+    }
+    #divide{
+        padding: 12px 21.5px;
+    }
+    #times{
+        padding: 12px 20px;
+    }
+
+    #minus{
+        padding: 12px 20px;
+    }
+
+    #plus{
+        padding: 12px 18px;
+    }
+
+    #equals{
+        padding: 38px 18px;
+    }
+
+    #doublezero{
+        padding: 12px 17px;
+    }
+    #dot{
+        padding: 12px 21px;
+    }
+}
+
+/* Medium Mobile Screen Dimension */
+@media screen and (max-width:376px) {
+    #result{
+        width: 245px;
+        height: 80px;
+        color: black;
+        font-size: 15px;
+        border: 10px solid #36454F;
+        padding: 20px;
+    }
+
+    #calcu-title{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #ver{
+        font-size: 8px;
+    }
+
+    .num-btn_grid1, .num-btn_grid2, .num-btn_grid3, .num-btn_grid4, .num-btn_grid5{
+        padding: 12px 20px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #clear{
+        padding: 12px 20.5px;
+    }
+    #del{
+        padding: 12px 14px;
+        margin-top: 6px;
+    }
+    #divide{
+        padding: 12px 21.5px;
+    }
+    #times{
+        padding: 12px 20px;
+    }
+
+    #minus{
+        padding: 12px 20px;
+    }
+
+    #plus{
+        padding: 12px 18px;
+    }
+
+    #equals{
+        padding: 38px 18px;
+    }
+
+    #doublezero{
+        padding: 12px 17px;
+    }
+    #dot{
+        padding: 12px 21px;
+    }
+}
+/* Small Mobile Screen Dimension */
+@media screen and (max-width:321px) {
+    #result{
+        width: 175px;
+        height: 50px;
+        color: black;
+        font-size: 10px;
+        border: 10px solid #36454F;
+        padding: 20px;
+    }
+
+    #calcu-title{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    #ver{
+        font-size: 5px;
+    }
+
+    .num-btn_grid1, .num-btn_grid2, .num-btn_grid3, .num-btn_grid4, .num-btn_grid5{
+        padding: 7px 14px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #clear{
+        padding: 7px 14.5px;
+    }
+    #del{
+        padding: 7px 7.5px;
+        margin-top: 5px;
+    }
+    #divide{
+        padding: 7px 15px;
+    }
+    #times{
+        padding: 7px 15px;
+    }
+
+    #minus{
+        padding: 7px 16px;
+    }
+
+    #plus{
+        padding: 7px 15px;
+    }
+
+    #equals{
+        padding: 28px 15px;
+    }
+
+    #doublezero{
+        padding: 7px 11px;
+    }
+    #dot{
+        padding: 7px 15px;
+    }
+}
+/* Height Responsiveness */
+@media screen and (max-height:575px) {
+    body{
+        height: 250vh;
+    }
+}

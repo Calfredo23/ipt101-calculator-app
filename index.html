@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR LOGIC WITH JAVASCRIPT</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+    <div class="w3-container w3-center w3-animate-opacity">
+        <table class="calcu-content">
+            <tr>
+                <td colspan="4"><h1 aria-colspan="4" id="calcu-title">Calculator<i id="ver">&nbsp  Alpha 0.01</i></h1><input type="text" id="result" disabled class="screen"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="clearInput()" id="clear" class="num-btn_grid1"></td>
+                <td><input type="button" value="DEL" onclick="delclearInput()" id="del" class="num-btn_grid1"></td>
+                <td><input type="button" value="/" onclick="divide()" id="divide" class="num-btn_grid1"></td>
+                <td><input type="button" value="*" onclick="times()" id="times" class="num-btn_grid1"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="appendNumber(7)" class="num-btn_grid2">
+                </td>
+                <td><input type="button" value="8" onclick="appendNumber(8)" class="num-btn_grid2">
+                </td>
+                <td><input type="button" value="9" onclick="appendNumber(9)" class="num-btn_grid2">
+                </td>
+                <td><input type="button" value="-" onclick="minus()" id="minus" class="num-btn_grid2">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="appendNumber(4)" class="num-btn_grid3">
+                </td>
+                <td><input type="button" value="5" onclick="appendNumber(5)" class="num-btn_grid3">
+                </td>
+                <td><input type="button" value="6" onclick="appendNumber(6)" class="num-btn_grid3">
+                <td><input type="button" value="+" onclick="add()" id="plus" class="num-btn_grid3"></td>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="appendNumber(1)" class="num-btn_grid4"></td>
+                <td><input type="button" value="2" onclick="appendNumber(2)" class="num-btn_grid4"></td>
+                <td><input type="button" value="3"onclick="appendNumber(3)" class="num-btn_grid4"></td>
+                <td rowspan="2"><input type="button" value="=" onclick="calculate()" id="equals" class="num-btn_grid4"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="00" onclick="appendNumber('00')" class="num-btn_grid5" id="doublezero"></td>
+                <td><input type="button" value="0" onclick="appendNumber(0)" class="num-btn_grid5"></td>
+                <td><input type="button" value="." onclick="appendNumber('.')"  class="num-btn_grid5" id="dot"></td>
+            </tr>
+        </table>
+    </div>
+<script src="calcu.js"></script>
+</body>
+</html>
